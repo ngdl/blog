@@ -53,12 +53,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   margin: 20px auto;
+  padding: 0 0 0 2px;
 }
 
 .menu {
   width: 800px;
   margin: 20px auto;
   padding: 5px 5px 5px;
+  vertical-align: top;
   background-color: var(--box-bg-color);
   text-align: left;
   font-size: 1em;
@@ -69,23 +71,23 @@ body {
   display: inline-block;
   margin: 0;
 }
-.menu__item, a.menu__item {
+.menu_item, a.menu_item {
   color: var(--text-color);
   border-color: transparent;
   display: inline-block;
   padding: 0px 20px;
   border-radius: 4px;
 }
-.menu__item_selected, a.menu__item_selected, a.menu__item:hover {
+.menu_item, a.menu_item:hover {
   color: var(--text-color-highlight);
   background-color: var(--box-bg-color); /** edit this part to change box color **/
   padding: 0px 20px;
   border-radius: 4px;
 }
 
-.list { width: 750px; margin: 15px auto; line-height: 1.6rem; }
+.list { width: 750px; margin: auto; line-height: 1.6rem; }
 
-.post { width: 750px; margin: 15px auto; }
+.post { width: 750px; margin: auto; }
 
 a {
   cursor: pointer;
@@ -107,7 +109,6 @@ h1 {
   display: inline-block;
   display: table-cell;
   padding: 15px 0 15px;
-  margin: 0;
   overflow: hidden;
 }
 h2, h3, h4, hr {
