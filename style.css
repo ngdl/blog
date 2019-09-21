@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
-
-html {
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-*, *:before, *:after {
-  box-sizing: inherit;
-}
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
 html,
 html[data-theme="light"] {
@@ -53,11 +52,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  margin: 0;
+  margin: 20px auto;
 }
 
 .menu {
-  margin: 20px 240px;
+  width: 800px;
+  margin: 20px auto;
   padding: 5px 5px 5px;
   background-color: var(--box-bg-color);
   text-align: left;
@@ -83,9 +83,9 @@ body {
   border-radius: 4px;
 }
 
-.list { margin: 0 265px; line-height: 1.6rem; }
+.list { width: 750px; margin: 15px auto; line-height: 1.6rem; }
 
-.post { margin: 0 265px; }
+.post { width: 750px; margin: 15px auto; }
 
 a {
   cursor: pointer;
@@ -102,7 +102,7 @@ a:hover {
 h1 {
   color: var(--text-color-highlight);
   font-size: 1.7em;
-  font-weight: 900;
+  font-weight: 700;
   position: relative;
   display: inline-block;
   display: table-cell;
