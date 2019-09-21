@@ -1,0 +1,9 @@
+---
+layout: default
+title: main
+---
+<div class="list">
+{% for post in site.posts %}
+  <span class="date">{{ post.date | date: "%Y-%m-%d"}}  »    <a href="{{ post.url }}">{{ post.title }}</a></span><br>
+{% endfor %}
+</div>

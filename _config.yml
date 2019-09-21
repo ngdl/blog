@@ -1,0 +1,13 @@
+title: ngdl.xyz
+author: ngdl
+permalink: /:categories/:title/
+email: contact@ngdl.xyz
+twitter: https://twitter.com/username
+description: personal website
+baseurl: ""
+url: "http://ngdl.xyz"
+markdown: kramdown
+highlighter: rouge
+exclude:
+  - "*.sketch"
+  - "vendor"
